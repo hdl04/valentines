@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: "Monstserrat", sans-serif;
+  color: #404040;
+  background-color: #f4f5f7;
+}
+
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-indent: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #800000;
+  margin-bottom: 2rem;
+  font-size: 3.32rem;
+}
+
+.cabecalho {
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.ul-navBar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  gap: 2.4rem;
+}
+
+.ul-navBar a {
+  color: black;
+  text-decoration: none;
+}
+
+.ul-navBar a:hover,
+.ul-navBar a:active {
+  color: #800000;
+  text-decoration: underline;
+}
+
+/* APRESENTAÇÃO */
+.secao-apresentacao {
+  background-color: #800000;
+  box-shadow: 0 0 0.3rem 0.4rem rgba(0, 0, 0, 0.432);
+  color: white;
+  font-size: 2.4rem;
+}
+
+.h2-apresentacao {
+  width: 50%;
+}
+
+#h2texto::after {
+  content: "|";
+
+  animation: blink 0.88s infinite;
+}
+
+#p-apresentacao {
+  font-size: 1.4rem;
+  text-align: justify;
+  width: 71%;
+}
+
+#p-apresentacao::after {
+  content: "|";
+  display: none;
+  animation: blink 0.88s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.container-apresentacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  color: white;
+  font-size: 2.4rem;
+}
+.video-apresentacao {
+  width: 50%;
+  aspect-ratio: 16/9;
+  border-radius: 2rem;
+  border: none;
+  display: block;
+}
+
+/* SOBRE NÓS */
+.secao-sobreNos {
+  color: black;
+  text-align: justify;
+}
+
+/* CARTAS */
+.container-cartas {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+  padding: 4.88rem;
+  padding-top: 7.63rem;
+}
+
+.caixa-titulo-cartas {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: rotate(-3deg) translate(-50%, -50%);
+  color: white;
+  background-color: #800000;
+  border-radius: 1rem;
+  padding: 1.02rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+  width: max-content;
+}
+
+.cartas {
+  position: relative;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.263);
+  width: 33%;
+  background-color: white;
+}
+
+.img-cartas {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.img-cartas:hover {
+  padding-bottom: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.cartas-feitas-em {
+  font-size: 1.33rem;
+  line-height: 1.5;
+  transform: translate(18%);
+}
+
+.titulo-cartas {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: rotate(-3deg) translate(-50%, -50%);
+  color: white;
+  background-color: #b80808;
+  border-radius: 1rem;
+  padding: 1.02rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+  width: max-content;
+}
+
+#language-selector {
+  border-radius: 3rem;
+  padding: 1rem;
+  border: 0.2rem solid black;
+}
