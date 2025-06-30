@@ -200,7 +200,7 @@ h1 {
 }
 
 .titulo-cartas {
-  display: inline-block;
+  display: flex;
   position: absolute;
   top: -1rem;
   left: 50%;
@@ -211,6 +211,12 @@ h1 {
   padding: 1.02rem 3.12rem;
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
   width: max-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-cartas {
+  text-indent: 0;
 }
 
 #language-selector {
